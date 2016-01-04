@@ -1,6 +1,4 @@
-general:
-  build_dir: scripts
 test:
   override:
     - nosetests
-    - pep8 *.py
+    - pep8 scripts/*.py
