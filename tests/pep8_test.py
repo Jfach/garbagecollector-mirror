@@ -1,8 +1,9 @@
 import os
 import unittest
 import pep8
+import fixture
 
-class TestPep8(unittest.TestCase):
+class TestPep8(fixture.TestFixture):
     """
     Run PEP8 tests.
     """
