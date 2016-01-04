@@ -2,7 +2,7 @@ import os
 import unittest
 
 UNIT_DIR = os.path.abspath(os.path.dirname(__file__))
-REPO_DIR = os.path.join(UNIT_DIR, '..', '..')
+REPO_DIR = os.path.join(UNIT_DIR, '..')
 
 
 class TestFixture(unittest.TestCase):
