@@ -1,14 +1,16 @@
 import os
+import unittest
 import pep8
 
-def test_conformance():
+class TestPep8(unittest.TestCase):
     """
     Run PEP8 tests.
     """
-    checker = pep8.StyleGuide(paths=[os.curdir], reporter=pep8.StandardReport)
-    report = checker.check_files()
-    result = report.total_errors
-    output = "\n".join(report.get_statistics())
-    if result != 0:
-        raise Exception("Found PEP8 errors:\n%s" % output)
+    def test_conformance(self):
+        checker = pep8.StyleGuide(paths=[os.curdir], reporter=pep8.StandardReport)
+        report = checker.check_files()
+        result = report.total_errors
+        output = "\n".join(report.get_statistics())
+        if result != 0:
+            self.fail("Found PEP8 errors:\n%s" % output)
    
