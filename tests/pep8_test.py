@@ -1,6 +1,6 @@
 import os
 import pep8
-from tests.unittest import TestFixture, REPO_DIR
+from .unittest import TestFixture, REPO_DIR
 
 
 class TestPep8(TestFixture):
