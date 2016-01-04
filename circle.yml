@@ -1,2 +1,5 @@
 general:
   build_dir: scripts
+test:
+  override:
+    - pep8 scripts/*.py
