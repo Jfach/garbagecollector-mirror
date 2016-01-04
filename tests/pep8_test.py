@@ -1,5 +1,3 @@
-import os
-import unittest
 import pep8
 from fixture import TestFixture, REPO_DIR
 
