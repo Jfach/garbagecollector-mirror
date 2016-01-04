@@ -1,7 +1,7 @@
 import os
 import pep8
 
-def test_conformance(self):
+def test_conformance():
     """
     Run PEP8 tests.
     """
@@ -10,5 +10,5 @@ def test_conformance(self):
     result = report.total_errors
     output = "\n".join(report.get_statistics())
     if result != 0:
-        self.fail("Found PEP8 errors:\n%s" % output)
+        raise Exception("Found PEP8 errors:\n%s" % output)
    
