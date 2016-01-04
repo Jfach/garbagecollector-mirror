@@ -1,4 +1,5 @@
 test:
   override:
-    - nosetests
-    - pep8 scripts/*.py
+    - pep8 scripts/asset_collect.py
+    - pep8 scripts/dnsTools.py
+    - pep8 scripts/nmapTools.py
