@@ -9,7 +9,4 @@ class TestFixture(unittest.TestCase):
     Fixture for unit tests
     """
     def setUp(self):
-        print
-        print
         print("Testing in: %s" % REPO_DIR)
-        print
